@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>The Blank.eth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--First Page-->
@@ -14,25 +15,27 @@
         <header class="header">
             <nav class="navbar">
                 <div class="logo"><a href="index.html">The_Blank.eth</a></div>
-                <ul>
+                <ul id="myLinks">
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Education</a></li>
-                </ul>
+                </ul> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </nav>
         </header>
         <!--Main Section of the page-->
         <main class="main1">
-            <div>
+            <div class="about">
                 <article>
                     <h5>Hi, my name is Mark John Saspa ⚡</h5>
                     <h2>Software Engineer | Electronics Engineering</h2>
                     <p>Html | Css | Java Script | Python</p>
+                    <p>Bootstrap | Tailwind Css</p>
                     <button class="btn" type="button"><a href="connect.html">Connect to The_Blank.eth</a></button>
                 </article>
             </div>
-            <div class="img"><img src="profile.png" alt="" width="450px" height="450px"></div>
+            <div class="img"><img src="images/profile.png" alt="" width="450px" height="450px"></div>
         </main>
     </section>
     <!--Footer Section-->
@@ -45,4 +48,5 @@
     </footer>
     
 </body>
+<script src="index.js"></script>
 </html>
