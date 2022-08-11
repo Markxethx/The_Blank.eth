@@ -5,11 +5,12 @@
 }
 
 .section1 {
-  height: 100vh;
+  overflow: hidden;
 }
 
 body {
   background: linear-gradient(to bottom, #00171f, #000);
+  overflow: hidden;
 }
 
 .header {
@@ -25,6 +26,7 @@ body {
   font-family: sans-serif;
   height: 15vh;
   padding: 0 80px;
+  overflow: hidden;
 }
 .header .navbar .logo {
   font-size: 32px;
@@ -32,11 +34,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header .navbar ul li {
+.header .navbar #myLinks li {
   display: inline-block;
   margin-right: 30px;
 }
-.header .navbar ul li a {
+.header .navbar #myLinks li a {
   text-decoration: none;
   list-style-type: none;
   font-size: 22px;
@@ -46,12 +48,142 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header .navbar ul li a:hover {
+.header .navbar #myLinks li a:hover {
   background: linear-gradient(to right, #FFD300, #DEFF0A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.header .navbar .icon {
+  display: none;
+}
 
+@media only screen and (max-width: 1024px) {
+  .header .navbar {
+    height: 13vh;
+  }
+  .header .navbar .logo {
+    font-size: 31px;
+  }
+  .header .navbar #myLinks li {
+    margin-right: 25px;
+  }
+  .header .navbar #myLinks li a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .header .navbar {
+    height: 13vh;
+  }
+  .header .navbar .logo {
+    font-size: 31px;
+  }
+  .header .navbar #myLinks li {
+    margin-right: 20px;
+  }
+  .header .navbar #myLinks li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 7810px) {
+  .header .navbar {
+    height: 13vh;
+  }
+  .header .navbar .logo {
+    font-size: 31px;
+  }
+  .header .navbar #myLinks li {
+    margin-right: 13px;
+  }
+  .header .navbar #myLinks li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .header .navbar {
+    height: 13vh;
+  }
+  .header .navbar .logo {
+    font-size: 31px;
+  }
+  .header .navbar #myLinks li {
+    margin-right: 12px;
+  }
+  .header .navbar #myLinks li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .header .navbar {
+    height: 12vh;
+    margin: 0;
+  }
+  .header .navbar .logo {
+    font-size: 29px;
+  }
+  .header .navbar ul li {
+    margin-right: 7px;
+  }
+  .header .navbar ul li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .navbar {
+    height: 12vh;
+    margin: 0;
+    position: relative;
+  }
+  .header .navbar .logo {
+    font-size: 29px;
+  }
+  .header .navbar #myLinks {
+    display: none;
+  }
+  .header .navbar #myLinks li {
+    display: block;
+    margin-right: -20px;
+  }
+  .header .navbar #myLinks li a {
+    font-size: 16px;
+  }
+  .header .navbar .icon {
+    color: #0AEFFF;
+    font-size: 16px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .header .navbar {
+    height: 12vh;
+    margin: 0;
+    position: relative;
+    margin-left: -40px;
+  }
+  .header .navbar .logo {
+    font-size: 20px;
+  }
+  .header .navbar #myLinks {
+    display: none;
+    position: relative;
+  }
+  .header .navbar #myLinks li {
+    display: block;
+    margin-right: -20px;
+    font-size: 12px;
+  }
+  .header .navbar #myLinks li a {
+    font-size: 12px;
+  }
+  .header .navbar .icon {
+    color: #0AEFFF;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+}
 .main1 {
   display: flex;
   justify-content: space-around;
@@ -99,6 +231,173 @@ body {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .main1 {
+    margin: 0 20px;
+  }
+  .main1 h2 {
+    font-size: 28px;
+  }
+  .main1 .btn {
+    padding: 3px 8px;
+  }
+  .main1 .img {
+    max-width: 440px;
+    width: 430px;
+    height: 430px;
+    max-height: 440px;
+    box-shadow: 2px 2px 20px 2px #0AEFFF !important;
+    border-radius: 50%;
+  }
+  .main1 .img img {
+    max-width: 440px;
+    width: 430px;
+    height: 430px;
+    max-height: 440px;
+  }
+}
+@media only screen and (max-width: 940px) {
+  .main1 {
+    margin: 0 20px;
+  }
+  .main1 h2 {
+    font-size: 28px;
+  }
+  .main1 .btn {
+    padding: 3px 8px;
+  }
+  .main1 .img {
+    max-width: 440px;
+    width: 430px;
+    height: 430px;
+    max-height: 440px;
+    box-shadow: 2px 2px 20px 2px #0AEFFF !important;
+    border-radius: 50%;
+  }
+  .main1 .img img {
+    max-width: 440px;
+    width: 430px;
+    height: 430px;
+    max-height: 440px;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .main1 {
+    margin: 0 20px;
+  }
+  .main1 h2 {
+    font-size: 28px;
+  }
+  .main1 .btn {
+    padding: 3px 8px;
+  }
+  .main1 .img {
+    max-width: 420px;
+    width: 410px;
+    height: 410px;
+    max-height: 420px;
+    box-shadow: 2px 2px 20px 2px #0AEFFF !important;
+    border-radius: 50%;
+  }
+  .main1 .img img {
+    max-width: 420px;
+    width: 410px;
+    height: 410px;
+    max-height: 420px;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 770px) {
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  .main1 .about {
+    order: 1;
+    text-align: center;
+  }
+  .main1 h2 {
+    font-size: 28px;
+  }
+  .main1 .btn {
+    padding: 3px 8px;
+  }
+  .main1 .img {
+    max-width: 420px;
+    width: 410px;
+    height: 410px;
+    max-height: 420px;
+    box-shadow: 2px 2px 20px 2px #0AEFFF !important;
+    border-radius: 50%;
+    order: -1;
+  }
+  .main1 .img img {
+    max-width: 420px;
+    width: 410px;
+    height: 410px;
+    max-height: 420px;
+  }
+}
+/* Cell Phone */
+@media only screen and (max-width: 426px) {
+  .main1 {
+    margin: 0 10px;
+  }
+  .main1 h2 {
+    font-size: 24px;
+  }
+  .main1 h5 {
+    font-size: 12px;
+  }
+  .main1 p {
+    font-size: 12px;
+  }
+  .main1 .btn {
+    padding: 3px 8px;
+  }
+  .main1 .img {
+    max-width: 305px;
+    width: 300px;
+    height: 300px;
+    max-height: 305px;
+  }
+  .main1 .img img {
+    max-width: 305px;
+    width: 300px;
+    height: 300px;
+    max-height: 305px;
+  }
+}
+/* Medium Cellphone */
+@media only screen and (max-width: 376px) {
+  .main1 .img {
+    max-width: 270px;
+    width: 265px;
+    height: 265px;
+    max-height: 270px;
+  }
+  .main1 .img img {
+    max-width: 270px;
+    width: 265px;
+    height: 265px;
+    max-height: 270px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .main1 .img {
+    max-width: 230px;
+    width: 225px;
+    height: 225px;
+    max-height: 230px;
+  }
+  .main1 .img img {
+    max-width: 230px;
+    width: 225px;
+    height: 225px;
+    max-height: 230px;
+  }
+}
 .main-connect {
   display: flex;
   flex-direction: column;
@@ -110,6 +409,7 @@ body {
   border-radius: 50%;
   height: 250px;
   width: 250px;
+  box-shadow: 2px 2px 20px 2px #0AEFFF !important;
 }
 .main-connect ul li {
   display: inline-block;
@@ -123,5 +423,52 @@ body {
   color: #0AEFFF;
 }
 .main-connect ul li a:hover {
-  text-shadow: 2px 2px 20px 2px #0AEFFF !important;
+  text-shadow: 3px 3px 30px #0AEFFF !important;
+}
+.main-connect ul li a:active {
+  color: #FFD300;
+}
+
+@media only screen and (max-width: 890px) {
+  .section1 .main-connect ul li {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 615px) {
+  .section1 .main-connect .circle {
+    height: 200px;
+    width: 200px;
+  }
+  .section1 .main-connect .circle img {
+    height: 200px;
+    width: 200px;
+  }
+  .section1 .main-connect ul li {
+    margin-left: 10px;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .section1 .main-connect ul li {
+    margin-left: 10px;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 435px) {
+  .section1 .main-connect ul li {
+    margin-left: 8px;
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .section1 .main-connect ul li {
+    margin-left: 8px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .section1 .main-connect ul li {
+    margin-left: 5px;
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=index.css.map */
